@@ -11,7 +11,7 @@
 
 After running the app, a browser tab will open automatically showing your app 👇
 
-![Demo Screenshot]("C:\Users\DELL\OneDrive\Pictures\Screenshots 1\Screenshot 2025-08-26 014242.png")
+![Demo Screenshot](images/demo.png)
 
 ---
 

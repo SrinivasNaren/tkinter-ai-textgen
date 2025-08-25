@@ -1,99 +1,91 @@
 
-````markdown
-# 🌟 AI Sentiment Analysis App (Tkinter + Hugging Face)
 
-A beginner-friendly **Desktop App** built with **Python, Tkinter, and Hugging Face Transformers** 🚀  
-This app predicts whether a given text has a **Positive 😀** or **Negative 😡** sentiment using **DistilBERT**.
+# 🌟 Sentiment Analysis Demo with DistilBERT
 
----
-
-## ✨ Features
-
-✅ Simple & Clean Desktop GUI (Tkinter)  
-✅ Uses **Hugging Face Transformers** (DistilBERT model)  
-✅ Instant Sentiment Prediction (Positive / Negative)  
-✅ Beginner-friendly Codebase 💻  
-✅ Great First AI + ML Project 🎯  
+> 🎉 A simple **Sentiment Analysis App** powered by Hugging Face’s [DistilBERT model](https://huggingface.co/distilbert/distilbert-base-uncased-finetuned-sst-2-english).
+> 🧠 Understand how text sentiment classification has evolved **before and after Transformers**.
 
 ---
 
-## 📸 Demo Screenshot
+## ✨ Demo Preview
 
-Here’s how the app looks 👇  
+After running the app, a browser tab will open automatically showing your app 👇
 
-![App Demo](Screenshot%202025-08-26%20014242.png)  
-
----
-
-## 📖 Before & After Transformers (Explained Simply)
-
-🔹 **Before Transformers:**  
-- Models like Naive Bayes, Logistic Regression, RNNs.  
-- Needed **manual preprocessing** (stopwords, stemming).  
-- Couldn’t understand context (e.g., "not good" was treated as "good").  
-
-🔹 **After Transformers (BERT, DistilBERT, GPT):**  
-- Understand **context & meaning** of words.  
-- Pre-trained on huge datasets → works out of the box.  
-- Much higher accuracy and faster to deploy.  
-
-👉 We’re using **DistilBERT**: a smaller, faster, but powerful version of BERT.  
-
-🔗 Model Used: [DistilBERT SST-2](https://huggingface.co/distilbert/distilbert-base-uncased-finetuned-sst-2-english)  
+![Demo Screenshot](./demo.png)
 
 ---
 
-## 🛠 Installation  
+## 📖 Theory (Before vs After Transformers)
 
-Clone the repo & install dependencies:  
+### 🕰 Before Transformers
+
+* Used **RNNs, LSTMs, GRUs** → processed text word by word.
+* Suffered from **long dependency problems** (hard to understand context in long sentences).
+* Training was **slow & memory heavy**.
+
+### ⚡ After Transformers
+
+* **Self-Attention** → model looks at the whole sentence at once.
+* **Parallel training** → much faster and scalable.
+* Pretrained models like **BERT, DistilBERT, GPT** made NLP tasks super easy.
+
+💡 **Thinkers vs Transformers**:
+Old models were like **“word readers”** → slow & forgetful.
+Transformers are like **“context thinkers”** → fast & smart.
+
+---
+
+## 🚀 Quick Start
+
+1️⃣ Clone this repo:
 
 ```bash
-git clone https://github.com/your-username/sentiment-analysis-app.git
-cd sentiment-analysis-app
+git clone https://github.com/your-username/sentiment-analysis-demo.git
+cd sentiment-analysis-demo
+```
+
+2️⃣ Install dependencies:
+
+```bash
 pip install -r requirements.txt
-````
+```
 
----
-
-## 🚀 Running the App
-
-Run the app with:
+3️⃣ Run the app:
 
 ```bash
 python app.py
 ```
 
-👉 The app window will open instantly:
-
-* Enter text in the box
-* Click **Analyze Sentiment**
-* Get instant results 🎉
+👉 This will **open your browser automatically** at `http://127.0.0.1:5000/` 🎨
 
 ---
 
-## 🎬 Live Demo (Steps)
+## 🔗 Model Reference
 
-1. Type: *I love this project!*
-   → Output: **Positive 😀**
-
-2. Type: *This is the worst experience ever.*
-   → Output: **Negative 😡**
+We are using Hugging Face’s **DistilBERT** fine-tuned on SST-2:
+👉 [distilbert-base-uncased-finetuned-sst-2-english](https://huggingface.co/distilbert/distilbert-base-uncased-finetuned-sst-2-english)
 
 ---
 
-## 🧠 How It Works
+## 🎯 Features
 
-1. User enters text in the **Tkinter GUI**.
-2. Hugging Face **pipeline** loads `distilbert-base-uncased-finetuned-sst-2-english`.
-3. Model predicts sentiment (Positive / Negative) with a confidence score.
-4. Result displayed on screen.
+✅ Clean & simple UI
+✅ Real-time Sentiment Analysis (Positive / Negative)
+✅ Powered by Hugging Face Transformers
+✅ Lightweight but effective
 
 ---
 
-## 🎯 Skills You’ll Learn
+## 🛠 Tech Stack
 
-* Python GUI (Tkinter)
-* Hugging Face Transformers basics
-* ML model integration in real apps
-* GitHub project setup with README
+* ⚡ **Python**
+* ⚡ **Flask**
+* 🤗 **Hugging Face Transformers**
+* 🌐 **HTML/CSS/JS** for frontend
+
+---
+
+## 🌍 Contribute
+
+Want to improve this project? PRs are welcome 💜
 
